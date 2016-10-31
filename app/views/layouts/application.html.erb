@@ -9,7 +9,12 @@
 </head>
 <body>
 
-	<%= render 'layouts/header' %>
+	<% if current_page?(new_user_session_path) %>
+		<%= render 'layouts/loginheader' %>
+	<% else %>
+		<%= render 'layouts/header' %>
+	<% end %>
+	
 	<div class="container">
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: 'alert alert-info') %>

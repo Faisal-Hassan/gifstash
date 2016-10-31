@@ -13,6 +13,8 @@ $navbar-default-toggle-hover-bg: #6d819c;
 $navbar-default-link-hover-color: #6d819c;
 $btn-primary-bg: #181842;
 $btn-primary-color: #f4f5f9;
+$btn-info-bg: #d3e0f7;
+$btn-info-color: #181842;
 $btn-default-bg: #f4f5f9;
 $btn-default-color: #181842;
 $jumbotron-bg: #f4f5f9;
@@ -28,7 +30,7 @@ body {
 }
 
 .jumbotron {
-	width:680px;
+	max-width:680px;
 	margin: 90px auto;
 }
 // home
@@ -44,12 +46,18 @@ body {
 	width: 128px;
 }
 // login
-.jumbotron .login {
-	width: 500px;
-	height: 400px;
+.panel {
+	max-width: 500px;
+	max-height: 470px;
+	margin: 80px auto;
+	
+}
+
+.panel-body {
+	padding-top: 30px;
+	overflow: hidden;
 }
 
 .login {
 	text-align: center;
-	padding: 20px;
 }

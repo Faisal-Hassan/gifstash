@@ -1,6 +1,14 @@
 <div class="jumbotron  center">
-	<h1>Gif Stash</h1>
-	<p>A Pinterest style Gif storage application</p>
-	<%= link_to 'Log In', '#', class: 'btn btn-primary btn-lg' %>
-	<%= link_to 'Sign Up', '#', class: 'btn btn-default btn-lg' %>
+	<%= image_tag "gif.png" %>
+	<br />
+	<br />
+	<p>Welcome to Gif Stash, the world's catalog of gifs</p>
+	<br />
+	<% if user_signed_in? %>
+		<!-- do something -->
+	<% else %>
+	<p>
+		<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+	</p>
+	<% end %>
 </div>

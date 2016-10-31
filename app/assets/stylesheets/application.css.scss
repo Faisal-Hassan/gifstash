@@ -16,14 +16,40 @@ $btn-primary-color: #f4f5f9;
 $btn-default-bg: #f4f5f9;
 $btn-default-color: #181842;
 $jumbotron-bg: #f4f5f9;
+$alert-info-bg: white;
+$alert-info-border: #181842;
+$alert-info-text: #181842;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	color: #181842;
+}
+
+.jumbotron {
+	width:680px;
+	margin: 90px auto;
+}
+// home
 .center {
 	text-align: center;
 }
 
 .navbar-brand {
 	font-weight: bold;
+}
+
+.btn-primary {
+	width: 128px;
+}
+// login
+.jumbotron .login {
+	width: 500px;
+	height: 400px;
+}
+
+.login {
+	text-align: center;
+	padding: 20px;
 }

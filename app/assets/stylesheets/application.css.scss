@@ -21,6 +21,14 @@ $jumbotron-bg: #f4f5f9;
 $alert-info-bg: white;
 $alert-info-border: #181842;
 $alert-info-text: #181842;
+$btn-danger-bg: #c72e45;
+$btn-danger-color: #F8FAFF;
+$btn-success-bg: #5CAB7D;
+$btn-success-color: #F8FAFF;
+$btn-warning-bg: #004e66;
+$btn-warning-color: #F8FAFF;
+$btn-info-border: #181842;
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -31,6 +39,10 @@ body {
 	color: #181842;
 }
 
+.btn-back {
+	background: white;
+	color: #181842;
+}
 .jumbotron {
 	max-width:680px;
 	margin: 90px auto;

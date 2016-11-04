@@ -37,6 +37,9 @@ body {
 	color: #181842;
 }
 
+.head {
+	text-align: center;
+}
 .btn-back {
 	background: white;
 	color: #181842;
@@ -86,4 +89,8 @@ body {
 
 .panel-default > .panel-heading {
 	background: #d3e0f7;
+}
+
+.panel-body  {
+    word-break: break-all;
 }

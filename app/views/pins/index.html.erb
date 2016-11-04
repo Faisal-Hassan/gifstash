@@ -8,7 +8,7 @@
         <div class="panel-body">
           <p><%= pin.description %></p>
         <% end %>
-          <strong><p><%= pin.user.email if pin.user %></p></strong>
+          <strong><p><%= pin.user.name if pin.user %></p></strong>
           <% if pin.user == current_user %>
             <%= link_to 'Edit', edit_pin_path(pin), class: 'btn btn-success btn-xs' %>
             <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %>

@@ -23,6 +23,10 @@ gem 'aws-sdk', '< 2.0'
 gem 'jquery-rails'
 # Masonry for Pinterest
 gem 'masonry-rails', '~> 0.2.4'
+# Paginate
+gem 'will_paginate', '~> 3.1'
+# Paginate bootstrap
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # User Authentication gem

@@ -1,17 +1,17 @@
-<p>
-  <%= image_tag @pin.image.url(:medium) %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @pin.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-
-<% if @pin.user == current_user %>
-	<%= link_to 'Edit', edit_pin_path(@pin), class: 'btn btn-success btn-xs' %> |
-<% end %>
-<%= link_to 'Back', pins_path, class: 'btn btn-info btn-xs' %>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel show panel-default">
+      <div class="panel-heading show center">
+	  		<%= image_tag @pin.image.url %>
+  		</div>
+	  	<div class="panel-body show">
+				<p><%= @pin.description %></p>
+				<p><strong><%= @pin.user.email if @pin.user %></strong></p>
+				<% if @pin.user == current_user %>
+					<%= link_to 'Edit', edit_pin_path(@pin), class: 'btn btn-success btn-xs' %> |
+				<% end %>
+				<%= link_to 'Back', pins_path, class: 'btn btn-info btn-xs' %>
+			</div>
+  	</div>
+	</div>
+</div>
